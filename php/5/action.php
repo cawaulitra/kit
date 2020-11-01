@@ -8,28 +8,28 @@
 		не соблюдены выводится сообщение об ошибке. Если всё верно,
 		выводить данные о пользователе в читабельном виде.
 	*/
-	
+		
 	$fio[0]		= ($_POST['secondName']);
 	$fio[1]		= ($_POST['firstName']);
 	$fio[2]		= ($_POST['thirdName']);
 	$date		= ($_POST['date']);
-	$gender		= ($_POST['gender']);
+	$gender		= (@$_POST['gender']); //@ убирает warning, если не выделен пол.
 	$group		= ($_POST['group']);
 	$country	= ($_POST['country']);
 	$adress		= ($_POST['adress']);
 	$phone		= ($_POST['phone']);
 	$email		= ($_POST['email']);
-	$active		= (@$_POST['active']); //Если человек ничем не увлекается - из .html будет возвращаться ничего, результируя ошибку. Знак @ прячет ошибку.
+	$active		= (@$_POST['active']); //@
 	$textbox	= ($_POST['textbox']);
-	
+
 	if (empty($fio[0])) echo "Ошибка: Пустая фамилия";
-	elseif (stristr($fio[0], ' ')) echo "Ошибка: Пустая фамилия";
-	if (empty($fio[1])) echo "Ошибка: Пустое имя";
-	elseif (stristr($fio[1], ' ')) echo "Ошибка: Пустаое имя";
-	if (empty($fio[2])) echo "Ошибка: Пустое отчество";
-	elseif (stristr($fio[2], ' ')) echo "Ошибка: Пустое отчество";
-	
-	elseif ((mb_substr($email, strlen($email) - 3, 3)) != '.ru') echo "Ошибка: E-mail не из русского диапазона.";
+	elseif (stristr($fio[0], ' ')) echo "Ошибка: В фамилии присутствует пробел.<br/>";
+	elseif (empty($fio[1])) echo "Ошибка: Пустое имя";
+	elseif (stristr($fio[1], ' ')) echo "Ошибка: В имени присутствует пробел.<br/>";
+	elseif (empty($fio[2])) echo "Ошибка: Пустое отчество";
+	elseif (stristr($fio[2], ' ')) echo "Ошибка: В отчестве присутствует пробел.<br/>";
+	elseif ((mb_substr($email, strlen($email) - 3, 3)) != '.ru')
+	echo "Ошибка: E-mail не из русского диапазона.";
 	
 	else {
 		echo "ФИО: $fio[0] $fio[1] $fio[2]<br/>";
