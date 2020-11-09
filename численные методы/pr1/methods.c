@@ -3,7 +3,7 @@
 
 float f(float x)
 {
-	return (x * x * x) - 2 * x + 2;
+	return (x * x * x) + 2 * (x * x) - 8 * x + 3;
 }
 
 int main()
@@ -25,7 +25,7 @@ int main()
             if( (f(x) * f(x + delta)) > 0) x += delta;
             else
                 {
-                printf("%f \n", (x + eps));
+                printf("OTBET: %f \n", (x + eps));
                 break;
                 }
         }
