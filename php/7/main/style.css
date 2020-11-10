@@ -1,0 +1,38 @@
+.a {
+	position: relative;
+	border: 1px solid black;
+	border-radius: 10px;
+	width: 340px;
+}
+ul {
+	list-style-type: none;
+}
+
+li {
+	width: 400px;
+	margin-bottom: 12px;
+}
+
+.txt {
+	width: 260px;
+}
+
+textarea {
+	width: 260px;
+	height: 60px;
+	margin-top: 210px;
+}
+
+p {
+	text-align: center;
+}
+
+.box {
+	position: absolute;
+	left: -4px;
+}
+
+.sub {
+	width: 266px;
+	text-align: center;
+}
