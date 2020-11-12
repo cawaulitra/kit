@@ -14,7 +14,10 @@ int main() {
     a = -3;     //a
     b = 0;      //b
     for (x = a; x < b; x += h) {
-        s += f (x + (h / 2));
+        s = (f(a) + f(b)/2);
+        for (x = a + b; x < b; x+=h) {
+            s += f(x);
+        }
     }
     s *= h;
     printf ("OTBET: %f", s);
