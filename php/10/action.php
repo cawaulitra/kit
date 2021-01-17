@@ -11,6 +11,7 @@
 		3) Пароль хранить в переменной, предварительно зашифровав значение
 		при помощи функции md5().
 	*/
+	session_start();
 		
 	$err = []; //массив с ошибками
 	$data = []; //массив с данными
@@ -19,12 +20,12 @@
 	if(isset($_POST['password'])) 	$data[1]  = ($_POST['password']);
 
 	if (empty($data[0]) && $data[0] = ' ') 
-		$err[] = "Ошибка: Пустой логин.";
+		$err[] = "Пустой логин.";
 	elseif (stristr($data[0], ' ')) 
-		$err[] = "Ошибка: В логине присутствует пробел.";
+		$err[] = "В логине присутствует пробел.";
 		
 	if (empty($data[1]) && $data[1] = ' ') 
-		$err[] = "Ошибка: Пустой пароль.";
+		$err[] = "Пустой пароль.";
 	//elseif (stristr($data[1], ' '))
 		//$err[] = "Ошибка: В имени присутствует пробел.";
 		
@@ -44,13 +45,13 @@
 			}
 		}
 		if ($yes != 1) echo "Неправильный логин или пароль.";
-		else {
-			session_start();
-			$_SESSION["user"] = "$data[0]";
-		}
-		//if(isset($_SESSION["user"])) echo $_SESSION["user"];
+		else $_SESSION["user"] = "$data[0]";
+
 		fclose($fp);
 	}
 	
-	else foreach ($err as $value) echo "$value</br>";
+	else {
+		echo "Произошла ошибка. Причина: </br>";
+		foreach ($err as $value) echo "$value</br>";
+	}
 ?>
