@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Форма</title>
+	</head>
+	<body>
+		<div>
+			<p>Практическая работа №11
+			<p>Вариант 5
+			<form action="action.php" method="post">
+				<ul>
+					<li>
+						<input class="txt" type="text" name="secondName" id="secondName" placeholder="Фамилия" value="">
+					</li>
+					<li>
+						<input class="txt" type="text" name="firstName" id="firstName" placeholder="Имя" value="">
+					</li>
+					<li>
+						<input class="txt" type="text" name="thirdName" id="thirdName" placeholder="Отчество" value="">
+					</li>
+					<li>
+						<input class="txt" type="date" name="date" id="date">
+					</li>
+					<li>
+						Пол: <input type="radio" name="gender" id="gender" value="M">М <input type="radio" name="gender" id="gender" value="W">Ж
+					</li>
+					<li>Группа: 
+						<select name="group" id="group">
+							<option></option>
+							<option>91</option>
+							<option>92</option>
+							<option>93</option>
+						</select>
+					</li>
+					<li>Страна:
+						<select name="country" id="country">
+							<option></option>
+							<option>Австралия</option>
+							<option>Австрия</option>
+							<option>Азербайджан</option>
+							<option>Албания</option>
+							<option>Алжир</option>
+							<option>Ангола</option>
+							<option>Андорра</option>
+							<option>Антигуа и Барбуда</option>
+							<option>Аргентина</option>
+							<option>Армения</option>
+							<option>Афганистан</option>
+							<option>Багамы</option>
+							<option>Бангладеш</option>
+							<option>Барбадос</option>
+							<option>Бахрейн</option>
+							<option>Белоруссия</option>
+							<option>Белиз</option>
+							<option>Бельгия</option>
+							<option>Бенин</option>
+							<option>Болгария</option>
+							<option>Боливия</option>
+							<option>Босния и Герцеговина</option>
+							<option>Ботсвана</option>
+							<option>Бразилия</option>
+							<option>Бруней</option>
+							<option>Буркина-Фасо</option>
+							<option>Бурунди</option>
+							<option>Бутан</option>
+							<option>Вануату</option>
+							<option>Великобритания</option>
+							<option>Венгрия</option>
+							<option>Венесуэла</option>
+							<option>Восточный Тимор</option>
+							<option>Вьетнам</option>
+							<option>Габон</option>
+							<option>Гаити</option>
+							<option>Гайана</option>
+							<option>Гамбия</option>
+							<option>Гана</option>
+							<option>Гватемала</option>
+							<option>Гвинея</option>
+							<option>Гвинея-Бисау</option>
+							<option>Германия</option>
+							<option>Гондурас</option>
+							<option>Гренада</option>
+							<option>Греция</option>
+							<option>Грузия</option>
+							<option>Дания</option>
+							<option>Джибути</option>
+							<option>Доминика</option>
+							<option>Доминикана</option>
+							<option>Египет</option>
+							<option>Замбия</option>
+							<option>Зимбабве</option>
+							<option>Израиль</option>
+							<option>Индия</option>
+							<option>Индонезия</option>
+							<option>Иордания</option>
+							<option>Ирак</option>
+							<option>Иран</option>
+							<option>Ирландия</option>
+							<option>Исландия</option>
+							<option>Испания</option>
+							<option>Италия</option>
+							<option>Йемен</option>
+							<option>Кабо-Верде</option>
+							<option>Казахстан</option>
+							<option>Камбоджа</option>
+							<option>Камерун</option>
+							<option>Канада</option>
+							<option>Катар</option>
+							<option>Кения</option>
+							<option>Кипр</option>
+							<option>Киргизия</option>
+							<option>Кирибати</option>
+							<option>Китай</option>
+							<option>Колумбия</option>
+							<option>Коморы</option>
+							<option>Конго</option>
+							<option>ДР Конго</option>
+							<option>КНДР</option>
+							<option>Корея</option>
+							<option>Коста-Рика</option>
+							<option>Кот-д’Ивуар</option>
+							<option>Куба</option>
+							<option>Кувейт</option>
+							<option>Лаос</option>
+							<option>Латвия</option>
+							<option>Лесото</option>
+							<option>Либерия</option>
+							<option>Ливан</option>
+							<option>Ливия</option>
+							<option>Литва</option>
+							<option>Лихтенштейн</option>
+							<option>Люксембург</option>
+							<option>Маврикий</option>
+							<option>Мавритания</option>
+							<option>Мадагаскар</option>
+							<option>Малави</option>
+							<option>Малайзия</option>
+							<option>Мали</option>
+							<option>Мальдивы</option>
+							<option>Мальта</option>
+							<option>Марокко</option>
+							<option>Маршалловы Острова</option>
+							<option>Мексика</option>
+							<option>Мозамбик</option>
+							<option>Молдавия</option>
+							<option>Монако</option>
+							<option>Монголия</option>
+							<option>Мьянма</option>
+							<option>Намибия</option>
+							<option>Науру</option>
+							<option>Непал</option>
+							<option>Нигер</option>
+							<option>Нигерия</option>
+							<option>Нидерланды</option>
+							<option>Никарагуа</option>
+							<option>Новая Зеландия</option>
+							<option>Норвегия</option>
+							<option>ОАЭ</option>
+							<option>Оман</option>
+							<option>Пакистан</option>
+							<option>Палау</option>
+							<option>Панама</option>
+							<option>Папуа - Новая Гвинея</option>
+							<option>Парагвай</option>
+							<option>Перу</option>
+							<option>Польша</option>
+							<option>Португалия</option>
+							<option>Россия</option>
+							<option>Руанда</option>
+							<option>Румыния</option>
+							<option>Сальвадор</option>
+							<option>Самоа</option>
+							<option>Сан-Марино</option>
+							<option>Сан-Томе и Принсипи</option>
+							<option>Саудовская Аравия</option>
+							<option>Северная Македония</option>
+							<option>Сейшелы</option>
+							<option>Сенегал</option>
+							<option>Сент-Винсент и Гренадины</option>
+							<option>Сент-Китс и Невис</option>
+							<option>Сент-Люсия</option>
+							<option>Сербия</option>
+							<option>Сингапур</option>
+							<option>Сирия</option>
+							<option>Словакия</option>
+							<option>Словения</option>
+							<option>Соединённые Штаты Америки</option>
+							<option>Соломоновы Острова</option>
+							<option>Сомали</option>
+							<option>Судан</option>
+							<option>Суринам</option>
+							<option>Сьерра-Леоне</option>
+							<option>Таджикистан</option>
+							<option>Таиланд</option>
+							<option>Танзания</option>
+							<option>Того</option>
+							<option>Тонга</option>
+							<option>Тринидад и Тобаго</option>
+							<option>Тувалу</option>
+							<option>Тунис</option>
+							<option>Туркмения</option>
+							<option>Турция</option>
+							<option>Уганда</option>
+							<option>Узбекистан</option>
+							<option>Украина</option>
+							<option>Уругвай</option>
+							<option>Микронезия</option>
+							<option>Фиджи</option>
+							<option>Филиппины</option>
+							<option>Финляндия</option>
+							<option>Франция</option>
+							<option>Хорватия</option>
+							<option>ЦАР</option>
+							<option>Чад</option>
+							<option>Черногория</option>
+							<option>Чехия</option>
+							<option>Чили</option>
+							<option>Швейцария</option>
+							<option>Швеция</option>
+							<option>Шри-Ланка</option>
+							<option>Эквадор</option>
+							<option>Экваториальная Гвинея</option>
+							<option>Эритрея</option>
+							<option>Эсватини</option>
+							<option>Эстония</option>
+							<option>Эфиопия</option>
+							<option>ЮАР</option>
+							<option>Южный Судан</option>
+							<option>Ямайка</option>
+							<option>Япония</option>
+						</select>
+					</li>
+					<li>
+						<input class="txt" type="text" name="adress" id="adress" placeholder="Адрес" value="">
+					</li>
+					<li>
+						<input class="txt" type="tel" name="phone" id="phone" placeholder="Телефон (начинать с +8)" value="">
+					</li>
+					<li>
+						<input class="txt" type="text" name="email" id="email" placeholder="E-mail" value="">
+					</li>
+				</ul>
+				<p>Твои увлечения?
+				<ul>
+					<div>
+						<ul>
+							<li>
+								<input type="checkbox" name="active[0]" value="Видеоигры">Видеоигры
+							</li>
+							<li>
+								<input type="checkbox" name="active[1]" value="Музыка">Музыка
+							</li>
+							<li>
+								<input type="checkbox" name="active[2]" value="Вёрстка">Вёрстка
+							</li>
+							<li>
+								<input type="checkbox" name="active[3]" value="Сладости">Сладости
+							</li>
+							<li>
+								<input type="checkbox" name="active[4]" value="Гитара">Гитара
+							</li>
+							<li>
+								<input type="checkbox" name="active[5]" value="Дизайн">Дизайн
+							</li>
+						</ul>
+					</div>
+					<li>
+						<textarea placeholder="Расскажи о себе!" name="textbox" value=""></textarea>
+					</li>
+					<li>
+						<input type="submit" name="sub" value="Отправить">
+					</li>
+				</ul>
+			</form>
+		</div>
+	</body>
+</html>
